@@ -4,7 +4,7 @@ This project is a very minimalist template project for STM32 microcontrollers. I
 
 It was written for a STM32F3Discovery board but it should be possible to modify it to run on STM32 microcontroller, with some modifications to the linker script and register addresses.
 
-As written, the program flashes a LED on the STM32F3Discovery board (LED9, or PE9). 
+As written, the program flashes a LED on the STM32F3Discovery board (LED3, or PE9). 
 
 For simplicity, there's no support for global variables. 
 
@@ -15,5 +15,9 @@ To compile and link the `main.elf` application, you'll need the [`arm-none-eabi`
 ### Openocd
 Openocd is used for flashing and on board debugging. To install on Fedora, `dnf install openocd`. 
 
+## Quick start
+`make` builds the `main.elf` application
 
+`make flash` flashes the application
 
+`make clean` removes built files
